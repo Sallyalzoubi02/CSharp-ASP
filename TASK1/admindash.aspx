@@ -21,6 +21,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <asp:Button CssClass="btn btn-primary" ID="addBook" runat="server" Text="add books" OnClick="addBook_Click" />
+                            <asp:Button CssClass="btn btn-primary" ID="editBook" runat="server" Text="edit book" OnClick="editBook_Click" />
                         </div>
                     </div>
 
@@ -30,7 +31,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <asp:Button CssClass="btn btn-primary" ID="addRoom" runat="server" Text="add Room" OnClick="addRoom_Click" />
-
+                            <asp:Button CssClass="btn btn-primary" ID="editRoom" runat="server" Text="edit Room" OnClick="editRoom_Click" />
                         </div>
                     </div>
                 </div>

@@ -17,11 +17,22 @@ namespace TASK1
         protected void addBook_Click(object sender, EventArgs e)
         {
             Response.Redirect("addBook.aspx");
+           
         }
 
         protected void addRoom_Click(object sender, EventArgs e)
         {
             Response.Redirect("addRoom.aspx");
+        }
+
+        protected void editBook_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("editbook.aspx");
+        }
+
+        protected void editRoom_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("editRoom.aspx");
         }
     }
 }

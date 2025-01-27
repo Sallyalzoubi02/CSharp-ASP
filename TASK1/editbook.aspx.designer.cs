@@ -11,7 +11,7 @@ namespace TASK1
 {
 
 
-    public partial class admindash
+    public partial class editbook
     {
 
         /// <summary>
@@ -24,39 +24,66 @@ namespace TASK1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// addBook control.
+        /// TableBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TableBody;
 
         /// <summary>
-        /// editBook control.
+        /// bookId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBook;
+        protected global::System.Web.UI.WebControls.TextBox bookId;
 
         /// <summary>
-        /// addRoom control.
+        /// bookName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addRoom;
+        protected global::System.Web.UI.WebControls.TextBox bookName;
 
         /// <summary>
-        /// editRoom control.
+        /// bookType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editRoom;
+        protected global::System.Web.UI.WebControls.TextBox bookType;
+
+        /// <summary>
+        /// bookLevel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox bookLevel;
+
+        /// <summary>
+        /// edit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button edit;
+
+        /// <summary>
+        /// res control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label res;
     }
 }

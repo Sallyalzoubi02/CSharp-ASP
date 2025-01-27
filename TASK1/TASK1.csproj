@@ -72,6 +72,8 @@
     <Content Include="admindash.aspx" />
     <Content Include="book.jpg" />
     <Content Include="books.txt" />
+    <Content Include="editbook.aspx" />
+    <Content Include="editRoom.aspx" />
     <Content Include="HOME.aspx" />
     <Content Include="img2.jpg" />
     <Content Include="img3.jpg" />
@@ -106,6 +108,20 @@
     </Compile>
     <Compile Include="admindash.aspx.designer.cs">
       <DependentUpon>admindash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editbook.aspx.cs">
+      <DependentUpon>editbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editbook.aspx.designer.cs">
+      <DependentUpon>editbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editRoom.aspx.cs">
+      <DependentUpon>editRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editRoom.aspx.designer.cs">
+      <DependentUpon>editRoom.aspx</DependentUpon>
     </Compile>
     <Compile Include="HOME.aspx.cs">
       <DependentUpon>HOME.aspx</DependentUpon>
