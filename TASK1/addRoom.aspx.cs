@@ -39,6 +39,7 @@ namespace TASK1
 
                 }
                 res.Text = "room added ";
+                res.Visible = true;
             }
             else
             {

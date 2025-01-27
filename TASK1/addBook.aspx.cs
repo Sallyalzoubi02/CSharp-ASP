@@ -40,6 +40,7 @@ namespace TASK1
 
                 }
                 res.Text = "book added";
+                res.Visible = true;
             }
             else
             {
