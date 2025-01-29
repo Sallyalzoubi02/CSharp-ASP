@@ -14,6 +14,13 @@ namespace TASK1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) { 
+                LoadBookData();
+            }
+        }
+
+        private void LoadBookData()
+        {
             string filePath = Server.MapPath("books.txt");
             if (File.Exists(filePath))
             {
@@ -41,8 +48,6 @@ namespace TASK1
                 TableBody.InnerHtml = "<tr><td colspan='4'>File not found.</td></tr>";
             }
         }
-
-
         protected void edit_Click(object sender, EventArgs e)
         {
 
@@ -50,6 +55,7 @@ namespace TASK1
             if (File.Exists(filePath))
             {
                 var fileContent = File.ReadAllLines(filePath);
+               
 
                 int count = 0;
                 foreach (var line in fileContent)
@@ -70,6 +76,7 @@ namespace TASK1
 
                 }
                 File.WriteAllLines(filePath,fileContent);
+                LoadBookData();
             }
 
         }
