@@ -42,6 +42,24 @@ namespace TASK1
         protected global::System.Web.UI.WebControls.TextBox bookId;
 
         /// <summary>
+        /// serchBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button serchBtn;
+
+        /// <summary>
+        /// searchRes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label searchRes;
+
+        /// <summary>
         /// bookName control.
         /// </summary>
         /// <remarks>

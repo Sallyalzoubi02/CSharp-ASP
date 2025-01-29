@@ -34,5 +34,10 @@ namespace TASK1
         {
             Response.Redirect("editRoom.aspx");
         }
+
+        protected void profile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("profile.aspx");
+        }
     }
 }

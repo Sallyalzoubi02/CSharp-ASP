@@ -25,5 +25,10 @@ namespace TASK1
         {
             Response.Redirect("viewBooks.aspx");
         }
+
+        protected void profile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("profile.aspx");
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace TASK1
 {
 
 
-    public partial class regester
+    public partial class edit_profile
     {
 
         /// <summary>
@@ -42,22 +42,13 @@ namespace TASK1
         protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// Male control.
+        /// gender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Male;
-
-        /// <summary>
-        /// Female control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Female;
+        protected global::System.Web.UI.WebControls.DropDownList gender;
 
         /// <summary>
         /// dob control.
@@ -69,39 +60,21 @@ namespace TASK1
         protected global::System.Web.UI.WebControls.TextBox dob;
 
         /// <summary>
-        /// password control.
+        /// cancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.Button cancel;
 
         /// <summary>
-        /// repass control.
+        /// saveCanghes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox repass;
-
-        /// <summary>
-        /// SignUp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SignUp;
-
-        /// <summary>
-        /// result control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label result;
+        protected global::System.Web.UI.WebControls.Button saveCanghes;
     }
 }

@@ -26,7 +26,7 @@ namespace TASK1
             string filePath = Server.MapPath("rooms.txt");
             if (File.Exists(filePath))
             {
-                var fileContent = File.ReadAllLines(filePath);
+                string[] fileContent = File.ReadAllLines(filePath);
 
                 for (int i = 0; i < fileContent.Length; i++)
                 {
@@ -65,7 +65,9 @@ namespace TASK1
                     if (room[0] == RoomId.Text)
                     {
                         searchRes.Text += $":    {line} ";
-                       
+                        roomName.Text = room[1];
+                        roomLoc.Text = room[2];
+                        roomCap.Text = room[3];
 
                         return;
                     }
@@ -78,12 +80,12 @@ namespace TASK1
             string filePath = Server.MapPath("rooms.txt");
             if (File.Exists(filePath))
             {
-                var fileContent = File.ReadAllLines(filePath);
+                string[] fileContent = File.ReadAllLines(filePath);
                 StringBuilder tableRows = new StringBuilder();
 
                 foreach (var line in fileContent)
                 {
-                    var columns = line.Split(',');
+                    string[] columns = line.Split(',');
                     if (columns.Length == 4)
                     {
                         tableRows.Append("<tr>");

@@ -22,10 +22,12 @@ namespace TASK1
             string Email = email.Text;
             string Password = password.Text;
             string Repass = repass.Text;
+            string userGender = Male.Checked ? "Male" :"Female";
+            string userDob = dob.Text;
 
             if (Password == Repass && Name != "" && Email != "" && Password != "" && Repass != "")
             {
-                string[] inputText = { Name, Email, Password };
+                string[] inputText = { Name,  Email, Password , userGender, userDob };
                 string content = string.Join(",", inputText);
                 string filePath = Server.MapPath("users.txt");
 

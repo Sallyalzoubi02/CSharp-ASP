@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,6 +30,8 @@
                                                 </div>
                                             </div>
 
+
+
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                 <div class="form-outline flex-fill mb-0">
@@ -37,6 +39,25 @@
                                                     <label class="form-label" for="form3Example3c">Your Email</label>
                                                 </div>
                                             </div>
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                                <div class="form-outline flex-fill mb-0">
+                                                    
+                                                    <asp:RadioButton ID="Male" GroupName="Gender" Text="Male" runat="server" />
+                                                    <asp:RadioButton ID="Female" GroupName="Gender" Text="Female" runat="server" />
+                                                    <asp:Label Text="Gender" runat="server"></asp:Label><br />
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <i class="fas fa-calendar-alt fa-lg me-3 fa-fw"></i>
+                                                <div class="form-outline flex-fill mb-0">
+                                                    
+                                                    <asp:TextBox ID="dob" runat="server" TextMode="Date"></asp:TextBox>
+                                                    <asp:Label Text="Date of Birth" runat="server"></asp:Label>
+                                                </div>
+                                            </div>
+
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
@@ -64,6 +85,8 @@
                                             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                                 <asp:Button CssClass="btn btn-primary" ID="SignUp" runat="server" Text="Sign Up" OnClick="SignUp_Click" />
                                             </div>
+
+
 
 
                                         </div>

@@ -11,7 +11,7 @@ namespace TASK1
 {
 
 
-    public partial class admindash
+    public partial class reset
     {
 
         /// <summary>
@@ -24,48 +24,39 @@ namespace TASK1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// addBook control.
+        /// newPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addBook;
+        protected global::System.Web.UI.WebControls.TextBox newPass;
 
         /// <summary>
-        /// editBook control.
+        /// Confirm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editBook;
+        protected global::System.Web.UI.WebControls.TextBox Confirm;
 
         /// <summary>
-        /// addRoom control.
+        /// cancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addRoom;
+        protected global::System.Web.UI.WebControls.Button cancel;
 
         /// <summary>
-        /// editRoom control.
+        /// saveCanghes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editRoom;
-
-        /// <summary>
-        /// profile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button profile;
+        protected global::System.Web.UI.WebControls.Button saveCanghes;
     }
 }

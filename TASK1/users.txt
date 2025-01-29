@@ -1,2 +1,2 @@
-Sally Alzoubi,sallyalzoubi60@gmail.com,sally
-batool,batool@gmail.com,123
+Sally,sallyalzoubi@gmail.com,123321,Female,2002-02-25
+admin,admin@gmail.com,123,Female,

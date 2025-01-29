@@ -72,6 +72,7 @@
     <Content Include="admindash.aspx" />
     <Content Include="book.jpg" />
     <Content Include="books.txt" />
+    <Content Include="edit profile.aspx" />
     <Content Include="editbook.aspx" />
     <Content Include="editRoom.aspx" />
     <Content Include="HOME.aspx" />
@@ -79,8 +80,10 @@
     <Content Include="img3.jpg" />
     <Content Include="img1.jpg" />
     <Content Include="login.aspx" />
+    <Content Include="profile.aspx" />
     <Content Include="regester.aspx" />
     <Content Include="meeting.jpg" />
+    <Content Include="reset.aspx" />
     <Content Include="rooms.txt" />
     <Content Include="userDash.aspx" />
     <Content Include="viewBooks.aspx" />
@@ -108,6 +111,13 @@
     </Compile>
     <Compile Include="admindash.aspx.designer.cs">
       <DependentUpon>admindash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit profile.aspx.cs">
+      <DependentUpon>edit profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit profile.aspx.designer.cs">
+      <DependentUpon>edit profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="editbook.aspx.cs">
       <DependentUpon>editbook.aspx</DependentUpon>
@@ -137,6 +147,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="regester.aspx.cs">
       <DependentUpon>regester.aspx</DependentUpon>
@@ -144,6 +161,13 @@
     </Compile>
     <Compile Include="regester.aspx.designer.cs">
       <DependentUpon>regester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reset.aspx.cs">
+      <DependentUpon>reset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reset.aspx.designer.cs">
+      <DependentUpon>reset.aspx</DependentUpon>
     </Compile>
     <Compile Include="userDash.aspx.cs">
       <DependentUpon>userDash.aspx</DependentUpon>

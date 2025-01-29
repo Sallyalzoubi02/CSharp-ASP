@@ -48,6 +48,33 @@ namespace TASK1
                 TableBody.InnerHtml = "<tr><td colspan='4'>File not found.</td></tr>";
             }
         }
+
+        protected void serchBtn_Click(object sender, EventArgs e)
+        {
+
+
+
+            string filePath = Server.MapPath("books.txt");
+
+            if (File.Exists(filePath))
+            {
+                string[] fileContent = File.ReadAllLines(filePath);
+                foreach (var line in fileContent)
+                {
+                    string[] book = line.Split(',');
+                    if (book[0] == bookId.Text)
+                    {
+                        searchRes.Text += $":    {line} ";
+                        bookName.Text = book[1];
+                        bookType.Text = book[2];
+                        bookLevel.Text = book[3];
+
+                        return;
+                    }
+
+                }
+            }
+        }
         protected void edit_Click(object sender, EventArgs e)
         {
 
@@ -55,28 +82,41 @@ namespace TASK1
             if (File.Exists(filePath))
             {
                 var fileContent = File.ReadAllLines(filePath);
-               
 
-                int count = 0;
-                foreach (var line in fileContent)
+                for (int i = 0; i < fileContent.Length; i++)
                 {
-                    
-                    string[] book = line.Split(',');
-                    string[] newBook = new string[book.Length];
+                    string[] book = fileContent[i].Split(',');
                     if (book[0] == bookId.Text)
                     {
-                        newBook[0] = book[0];
-                        newBook[1] = bookName.Text;
-                        newBook[2] = bookType.Text;
-                        newBook[3] = bookLevel.Text;
-                        fileContent[count] = $"{newBook[0]},{newBook[1]},{newBook[2]},{newBook[3]}";
+                        book[1] = bookName.Text;
+                        book[2] = bookType.Text;
+                        book[3] = bookLevel.Text;
+                        fileContent[i] = $"{book[0]},{book[1]},{book[2]},{book[3]}";
                         break;
                     }
-                    count++;
-
                 }
-                File.WriteAllLines(filePath,fileContent);
+                File.WriteAllLines(filePath, fileContent);
                 LoadBookData();
+
+                //int count = 0;
+                //foreach (var line in fileContent)
+                //{
+
+                //    string[] book = line.Split(',');
+                //    string[] newBook = new string[book.Length];
+                //    if (book[0] == bookId.Text)
+                //    {
+                //        newBook[0] = book[0];
+                //        newBook[1] = bookName.Text;
+                //        newBook[2] = bookType.Text;
+                //        newBook[3] = bookLevel.Text;
+                //        fileContent[count] = $"{newBook[0]},{newBook[1]},{newBook[2]},{newBook[3]}";
+                //        break;
+                //    }
+                //    count++;
+
+                //}
+
             }
 
         }

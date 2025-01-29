@@ -20,6 +20,7 @@ namespace TASK1
         {
             if (Email.Text=="Admin@gmail.com" && Password.Text == "123")
             {
+                Session["UserEmail"] = Email.Text;
                 Response.Redirect("admindash.aspx");
             }
             else
@@ -37,6 +38,7 @@ namespace TASK1
                     {
                         result.Text = "login successfully";
                         result.Visible = true;
+                        Session["UserEmail"] = Email.Text;
                         Response.Redirect("userdash.aspx");
 
                     }

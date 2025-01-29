@@ -34,6 +34,16 @@
                             <asp:Button CssClass="btn btn-primary" ID="editRoom" runat="server" Text="edit Room" OnClick="editRoom_Click" />
                         </div>
                     </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="meeting.jpg" class="card-img-top w-100" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <asp:Button CssClass="btn btn-primary" ID="profile" runat="server" Text="profile" OnClick="profile_Click" />
+                           
+                        </div>
+                    </div>
                 </div>
 
             </div>
