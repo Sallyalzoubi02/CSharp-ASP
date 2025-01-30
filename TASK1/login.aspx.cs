@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using System.IO;
+using System.Reflection.Emit;
+using System.Runtime.Remoting.Contexts;
 
 namespace TASK1
 {
@@ -20,7 +22,7 @@ namespace TASK1
         {
             if (Email.Text=="Admin@gmail.com" && Password.Text == "123")
             {
-                Session["UserEmail"] = Email.Text;
+                storLoged();
                 Response.Redirect("admindash.aspx");
             }
             else
@@ -38,7 +40,7 @@ namespace TASK1
                     {
                         result.Text = "login successfully";
                         result.Visible = true;
-                        Session["UserEmail"] = Email.Text;
+                        storLoged();
                         Response.Redirect("userdash.aspx");
 
                     }
@@ -54,7 +56,19 @@ namespace TASK1
 
         }
         
+        private void storLoged()
+        {
+            string filePath = Server.MapPath("loged.txt");
+            if (File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, Email.Text);
+            }
+            else
+            {
+                File.WriteAllText(filePath, Email.Text);
 
+            }
+        }
         protected void registr_Click(object sender, EventArgs e)
         {
             Response.Redirect("regester.aspx");

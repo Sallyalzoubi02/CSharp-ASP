@@ -14,10 +14,11 @@ namespace TASK1
         protected void Page_Load(object sender, EventArgs e)
         {
             string filePath = Server.MapPath("users.txt");
+            string fileLoged = Server.MapPath("loged.txt");
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
-                string userEmail = Session["UserEmail"].ToString();
+                string userEmail =File.ReadAllText(fileLoged);
 
                 foreach (string line in content)
                 {

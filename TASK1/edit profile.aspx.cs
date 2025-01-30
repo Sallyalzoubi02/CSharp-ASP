@@ -30,7 +30,8 @@ namespace TASK1
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
-                string userEmail = Session["UserEmail"].ToString();
+                string fileLoged = Server.MapPath("loged.txt");
+                string userEmail = File.ReadAllText(fileLoged);
 
                 for (int i = 0; i < content.Length; i++) 
                 {
@@ -41,7 +42,7 @@ namespace TASK1
                         user[1] = email.Text;
                         user[3] = gender.SelectedValue;
                         user[4] = dob.Text;
-                        Session["UserEmail"] = email.Text;
+                        File.WriteAllText(fileLoged, email.Text);
                         content[i] = $"{user[0]},{user[1]},{user[2]},{user[3]},{user[4]}";
                         
                         Response.Write("<script>alert('information changed!');</script>");
@@ -59,7 +60,8 @@ namespace TASK1
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
-                string userEmail = Session["UserEmail"].ToString();
+                string fileLoged = Server.MapPath("loged.txt");
+                string userEmail = File.ReadAllText(fileLoged);
 
                 foreach (string line in content)
                 {
